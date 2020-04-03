@@ -14,12 +14,12 @@ class PrivacyUpdate(MycroftSkill):
         feed = feedparser.parse(url)
 
         for post in feed.entries:
-        date = "(%d/%02d/%02d)" % (post.published_parsed.tm_year,\
-        post.published_parsed.tm_mon, \
-        post.published_parsed.tm_mday)
-        print("post date: " + date)
-        print("post title: " + post.title)
-        print("post link: " + post.link)
+            self.speak(date = "(%d/%02d/%02d)" % (post.published_parsed.tm_year,\
+            post.published_parsed.tm_mon, \
+            post.published_parsed.tm_mday)
+            print("post date: " + date)
+            print("post title: " + post.title)
+            print("post link: " + post.link))
 
 def create_skill():
     return PrivacyUpdate()
