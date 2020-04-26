@@ -10,7 +10,7 @@ class PrivacyUpdate(MycroftSkill):
     def handle_update_privacy(self, message):
         url= "http://fetchrss.com/rss/5e8742188a93f83f138b45675e8741f48a93f8cc108b4567.xml"
         feed = feedparser.parse(url)
-
+        self.speak_dialog("hello")
         for post in feed.entries:
             #i = 0
             #i = i + 1 
