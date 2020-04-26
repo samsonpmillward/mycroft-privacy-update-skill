@@ -2,7 +2,7 @@
 A rundown of the latest privacy news
 
 ## About
-A skill that will read out the top news containing the word "privacy"
+A skill that will read out the top 5 news articles containing the word "privacy".
 
 ## Examples
 * "Give me a privacy update"
