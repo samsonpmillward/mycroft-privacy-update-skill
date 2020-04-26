@@ -20,7 +20,7 @@ class PrivacyUpdate(MycroftSkill):
             #print("post date: " + date)
             #print("post title: " + post.title)
             #print("post link: " + post.link))
-            self.speak_dialog("News article" + i)
+            self.speak_dialog("News article", i)
             self.speak_dialog('update.privacy', {'news': post.title})
 
 
