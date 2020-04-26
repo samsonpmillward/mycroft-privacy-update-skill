@@ -11,8 +11,8 @@ class PrivacyUpdate(MycroftSkill):
         url= "http://fetchrss.com/rss/5e8742188a93f83f138b45675e8741f48a93f8cc108b4567.xml"
         feed = feedparser.parse(url)
         self.speak_dialog("Here are the 5 latest news articles referencing privacy: ")
+        i = 0
         for post in feed.entries:
-            i = 0
             i = i + 1 
             date = "(%d/%02d/%02d)" % (post.published_parsed.tm_year,\
                 post.published_parsed.tm_mon, \
