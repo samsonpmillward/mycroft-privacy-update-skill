@@ -13,7 +13,7 @@ class PrivacyUpdate(MycroftSkill):
         self.speak_dialog("Here are the 5 latest news articles referencing privacy: ")
         i = 0
         for post in feed.entries:
-            i = i + 1 
+            #i = i + 1 
             date = "(%d/%02d/%02d)" % (post.published_parsed.tm_year,\
                 post.published_parsed.tm_mon, \
                 post.published_parsed.tm_mday)
