@@ -1,0 +1,6 @@
+
+{
+  "utterance": "Give me a privacy update",
+  "intent_type": "handle_update_privacy",
+  "expected_dialog": "Here is the latest 5 news articles containing the keyword privacy, {news}"
+}
