@@ -22,8 +22,9 @@ class PrivacyUpdate(MycroftSkill):
             #print("post link: " + post.link))
             
             self.speak_dialog('update.privacy', {'news': post.title})
+            
+        for x in range(4):
             self.speak_dialog("Next news article", i)
-
 
 def create_skill():
     return PrivacyUpdate()
