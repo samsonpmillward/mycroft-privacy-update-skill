@@ -17,18 +17,11 @@ class PrivacyUpdate(MycroftSkill):
             date = "(%d/%02d/%02d)" % (post.published_parsed.tm_year,\
                 post.published_parsed.tm_mon, \
                 post.published_parsed.tm_mday)
-            #print("post date: " + date)
-            #print("post title: " + post.title)
-            #print("post link: " + post.link))
-            #self.speak_dialog("Next news article", i)
             self.speak_dialog('update.privacy', {'news': post.title})
             if i < 5:
                 self.speak_dialog("Next news article", i)
            
                 
-            
-       # for x in range(4):
-         #   self.speak_dialog("Next news article", i)
-
+ 
 def create_skill():
     return PrivacyUpdate()
