@@ -20,8 +20,12 @@ class PrivacyUpdate(MycroftSkill):
             #print("post date: " + date)
             #print("post title: " + post.title)
             #print("post link: " + post.link))
-            self.speak_dialog("Next news article", i)
+            #self.speak_dialog("Next news article", i)
             self.speak_dialog('update.privacy', {'news': post.title})
+            if i > 5:
+                self.speak_dialog("Next news article", i)
+           
+                
             
        # for x in range(4):
          #   self.speak_dialog("Next news article", i)
